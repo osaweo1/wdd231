@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Osawe Osamudiamen">
+    <meta name="description" content="WDD231 Home Page">
+    <title> WDD231 Home Page</title>
+    
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="headdiv">
+            <div class="logo">
+                <img src="images/logoimage.svg" alt="">
+                <h1> Osamudiamen Osawe</h1>
+            </div>
+            <img src="/images/burger-bar.png" alt="" class="burger">
+            <img src="/images/close.png" alt="" class="burger-close">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am currently pursuing a degree in Software Development, specializing in Web Development and Computer Programming.  
+                I am passionate about building clean, responsive, and accessible websites that provide a great user experience.  
+                Throughout my studies, I have gained experience with HTML, CSS, JavaScript, and modern web design principles.  
+                I enjoy solving problems, learning new technologies, and creating projects that combine functionality with design.  
+                My goal is to develop professional web applications and contribute to innovative projects that make a difference.
+            </p>
+        </section>
+        <section class="student-image">
+            <h2>Student Photo</h2>
+            <img src="images/logoimage.svg" alt="">
+        </section>
+        <section class="certificate">
+            <h2>Certificate Courses</h2>
+
+            <div class="buttons">
+                <a id="all">All</a>
+                <a id="wdd">WDD</a>
+                <a id="cse">CSE</a>
+            </div>
+
+            <div class="courses"></div>
+            <p id="totalCredits"></p>
+
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/osaweo1"><img src="images/icons8-github-50.png" alt=""/></a>
+            <a href="https://linkedin.com"><img src="images/icons8-linkedin-50.png" alt=""/></a>
+            <a href="https://x.com"><img src="images/icons8-x-50.png" alt=""/></a>
+        </div>
+
+       <div class="footer-date">
+             <p>
+                &copy;<span id="year"></span> Osawe Osamudiamen |Benin City | Nigeria
+            </p>
+
+            <p id="lastModified"></p>
+       </div>
+
+
+
+    </footer>
     
 </body>
 </html>

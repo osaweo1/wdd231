@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hide hamburger menu */
+    header .burger {
+        display: none;
+    }
+
+    
+    nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 70px;
+    }
+
+    /* MAIN GRID LAYOUT */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+
+    .about-me {
+        grid-column: 1 / 2;
+
+    }
+   
+
+    .student-image {
+        grid-column: 2 / 3;
+    }
+    .certificate{
+        grid-column:1/3 ;
+    }
+}
