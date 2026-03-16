@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osawe Osamudiamen">
+    <meta name="description" content="Explore the business directory of the Oredo Chamber of Commerce in Benin City. Discover local companies, services, and partners supporting economic growth.">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta property="og:title" content="this is a chamber page">
+    <meta property="og:description" content="Explore the business directory of the Oredo Chamber of Commerce in Benin City. Discover local companies, services, and partners supporting economic growth.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://www.oredochamberofcomerce.com">
+    <link href="styles/smallScreen.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/oredologo.jpg" alt="oredo chamber of Commerce"/>
+                <span>Oredo Chamber of Commerce</span>
+            </div>
+            <img class="menu-image open" src="images/burger-bar.png" alt="menu"/>
+            <img class="close"src="images/close.png" alt="menu"/>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section class="directory-header">
+            <h1>Business Directory</h1>
+            <p>Explore businesses and organizations that are members of the Oredo Chamber of Commerce in Benin City.</p>
+        </section>
+        <section>
+            <div class="filters">
+                <div class="Search-input-div">
+                    <label for="searchInput">Search Businesses:</label>
+
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by name, category, or address..."
+                    >
+                </div>
+                <div class="category-div">
+                    <label for="categoryFilter">Category:</label>
+
+                    <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Services">Services</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="members" class="grid"></section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/osaweo1"><img src="images/icons8-github-50.png" alt=""/></a>
+            <a href="https://linkedin.com"><img src="images/icons8-linkedin-50.png" alt=""/></a>
+            <a href="https://x.com"><img src="images/icons8-x-50.png" alt=""/></a>
+        </div>
+
+       <div class="footer-date">
+             <p>
+                &copy;<span id="year"></span> Osawe Osamudiamen |Benin City | Nigeria
+            </p>
+
+            <p id="lastModified"></p>
+       </div>
+    </footer>
+    
+</body>
+</html>
