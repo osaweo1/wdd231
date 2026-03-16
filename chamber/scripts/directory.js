@@ -2,7 +2,7 @@ const searchInput=document.querySelector("#searchInput")
 const searchCategory=document.querySelector("#categoryFilter")
 const memberSection=document.querySelector("#members")
 
-const url="data/members.js"
+const url="data/members.json"
 console.log(url)
 
 let members=[]
