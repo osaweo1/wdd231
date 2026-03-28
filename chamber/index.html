@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osawe Osamudiamen">
+    <meta name="description" content="Explore the business directory of the Oredo Chamber of Commerce in Benin City. Discover local companies, services, and partners supporting economic growth.">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta property="og:title" content="Oredo chamber of Commerce| Directory page">
+    <meta property="og:description" content="Explore the business directory of the Oredo Chamber of Commerce in Benin City. Discover local companies, services, and partners supporting economic growth.">
+    <meta property="og:image" content="https://osaweo1.github.io/wdd231/chamber/images/oredochambers.jpg">
+    <meta property="og:url" content="https://www.oredochamberofcomerce.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="styles/smallscreen.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/event.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    
+
+    <title>Oredo chamber of Commerce| Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/oredologo.jpg" alt="oredo chamber of Commerce"/>
+                <span>Oredo Chamber of Commerce</span>
+            </div>
+            <img class="menu-image open" src="images/burger-bar.png" alt="menu"/>
+            <img class="close"src="images/close.png" alt="menu"/>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="">
+            <div class="hero-layout">
+                <h2> Oredo Chamber of Commerce</h2>
+                <p>Empowering local Business</p>
+                <a href="Join.html">Make Your Business Loud </a>
+            </div>
+        </section>
+        <h1>Home</h1>
+        <div class="main-div">
+        <section class="event-section">
+            <h2>Up Coming Events</h2>
+            <div class="slider">
+
+            </div>
+            
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Condition: <span id="desc"></span></p>
+
+            
+        </section>
+        <section class="forcast">
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
+        </section>
+        </div>
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+       
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/osaweo1"><img src="images/icons8-github-50.png" alt=""/></a>
+            <a href="https://linkedin.com"><img src="images/icons8-linkedin-50.png" alt=""/></a>
+            <a href="https://x.com"><img src="images/icons8-x-50.png" alt=""/></a>
+        </div>
+
+       <div class="footer-date">
+             <p>
+                &copy;<span id="year"></span> Osawe Osamudiamen |Benin City | Nigeria
+            </p>
+
+            <p id="lastModified"></p>
+       </div>
+    </footer>
+    
+</body>
+</html>

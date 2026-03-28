@@ -6,7 +6,8 @@
 "website":"https://thepalavy.com",
 "image":"https://img.freepik.com/premium-vector/illustration-tailor-sewing-clothes_207579-2039.jpg",
 "membership":5,
-"category":"Services"
+"category":"Services",
+"level": "Gold"
 }
 ,
 {
@@ -16,7 +17,8 @@
 "website":"https://benintech.com",
 "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVfItC4ZEArd4Romr670eYQRaQCZfBV3Z2w&s",
 "membership":4,
-"category":"Technology"
+"category":"Technology",
+"level": "Bronze"
 },
 
 {
@@ -26,7 +28,8 @@
 "website":"https://royalheritagehotel.com",
 "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/0c/e3/03/hotel-royal-heritage.jpg?w=900&h=500&s=1",
 "membership":3,
-"category":"Hospitality"
+"category":"Hospitality",
+"level": "Gold"
 },
 
 {
@@ -36,7 +39,8 @@
 "website":"https://edoagro.com",
 "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2kHXU_cLaWHpCh1W8x9MSJsN__flpTkG5kg&s",
 "membership":2,
-"category":"Agriculture"
+"category":"Agriculture",
+"level": "Silver"
 },
 
 {
@@ -46,6 +50,7 @@
 "website":"https://oredoprint.com",
 "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWnfJWA0ViW-N02RrOGlpU5skbbfP3cCBrXg&s",
 "membership":1,
-"category":"Services"
+"category":"Services",
+"level": "Gold"
 }
 ]
