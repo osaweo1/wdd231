@@ -52,112 +52,25 @@
 
     </header>
 
-    <main class="main">
-        <section class="directory-header">
-            <h1>Registration</h1>
-            <p>Joing for Business Exposure</p>
-        </section>
-        <section class="form-modal">
-        <section class="form-section">
-            <form method="get" action="thanks.html">
+    <main class="main-thank">
+        <h2>Thank You for Joining!</h2>
 
-            <label>
-            First Name:
-            <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
-            </label>
+        <div id="results" class="results-thank"></div>
 
-            <label>
-            Last Name:
-            <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
-            </label>
+        <script>
 
-            <label>
-            Organization Title:
-            <input type="text" name="orgtitle" title="At least 7 characters"
-            pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title">
-            </label>
+            const params = new URLSearchParams(window.location.search)
 
-            <label>
-            Email:
-            <input type="email" name="email" required placeholder="example@email.com" autocomplete="email">
-            </label>
+            document.getElementById("results").innerHTML = `
+            <p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
+            <p><strong>Email:</strong> ${params.get("email")}</p>
+            <p><strong>Phone:</strong> ${params.get("phone")}</p>
+            <p><strong>Business:</strong> ${params.get("business")}</p>
+            <p><strong>Date:</strong> ${params.get("timestamp")}</p>
+            `
 
-            <label>
-            Phone:
-            <input type="tel" name="phone" required autocomplete="tel">
-            </label>
-
-            <label>
-            Business Name:
-            <input type="text" name="business" required autocomplete="organization">
-            </label>
-
-            <label>
-            Membership Level:
-            <select name="membership">
-            <option value="np">NP Membership</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-            </select>
-            </label>
-
-            <label>
-            Business Description:
-            <textarea name="description"></textarea>
-            </label>
-
-            <input type="hidden" name="timestamp" id="timestamp">
-
-            <input type="submit" value="Apply Now">
-
-            </form>
-        </section>
-        <section class="cards">
-            <h2>Membership Level</h2>
-            <div class="card">
-            <h3>NP Membership</h3>
-            <a href="#" data-modal="npModal">View Benefits</a>
-            </div>
-
-            <div class="card">
-            <h3>Bronze</h3>
-            <a href="#" data-modal="bronzeModal">View Benefits</a>
-            </div>
-
-            <div class="card">
-            <h3>Silver</h3>
-            <a href="#" data-modal="silverModal">View Benefits</a>
-            </div>
-
-            <div class="card">
-            <h3>Gold</h3>
-            <a href="#" data-modal="goldModal">View Benefits</a>
-            </div>
-
-        </section>
-        </section>
-        
+        </script>
     </main>
-    <div id="npModal" class="modal">
-        <p>Free membership for non-profits</p>
-        <a href="#" class="close"><img src="images/close.png" alt=""></a>
-    </div>
-
-    <div id="bronzeModal" class="modal">
-        <p>Basic advertising + events</p>
-        <a href="#" class="close"><img src="images/close.png" alt=""></a>
-    </div>
-
-    <div id="silverModal" class="modal">
-        <p>More exposure + training</p>
-        <a href="#" class="close"><img src="images/close.png" alt=""></a>
-    </div>
-
-    <div id="goldModal" class="modal">
-        <p>Premium spotlight + discounts</p>
-       <a href="#" class="close"><img src="images/close.png" alt=""></a>
-    </div>
     <footer>
         <div class="social">
             <a href="https://github.com/osaweo1"><img src="images/icons8-github-50.png" alt=""/></a>

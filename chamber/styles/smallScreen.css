@@ -345,3 +345,138 @@ main h1{
   width: 100px;
   height: auto;
 }
+
+/* join section */
+.form-section{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+form label{
+    width: 100%;
+    font-weight: bold;
+    padding: 50 0 0 50;
+    min-width: 100px;
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+}
+input[type="submit"]{
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+label input{
+    padding: 10px;
+}
+label select{
+    padding: 10px;
+}
+label textarea{
+    width: 200px;
+    height: 100px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    padding: 20px;
+}
+
+.card{
+    padding:20px;
+    background:#b9ebc1;
+    text-align:center;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeIn 1s forwards;
+}
+.card a{
+    text-decoration: none;
+    padding: 10px;
+   border-radius: 5px ;
+   border: 1px solid var(--secondary-color);
+   color: #550808;
+}
+
+.card:nth-child(2){animation-delay:0.2s;}
+.card:nth-child(3){animation-delay:0.4s;}
+.card:nth-child(4){animation-delay:0.6s;}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    width: 60%;
+    height: 200px;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:white;
+    padding:20px;
+    box-shadow:0 0 10px rgb(59, 59, 59);
+}
+
+.modal.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5 ease-in-out;
+    /* opacity: 1; */
+}
+
+
+
+.modal .close{
+    /* border: 1px solid; */
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+   border-radius: 5px ;
+   border: 1px solid var(--secondary-color);
+   color: #550808;
+   width: 100px;
+   text-align: center;
+}
+
+.modal .close img{
+    width: 50px;
+}
+
+/* thank you page */
+
+#results{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.main-thank h2{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 30px;
+
+}
