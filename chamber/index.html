@@ -22,12 +22,11 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/event.js" defer></script>
-    <script src="scripts/join.js" defer></script>
-    
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
     
 
-    <title>Oredo chamber of Commerce| Join</title>
+    <title>Oredo chamber of Commerce| Home</title>
 </head>
 <body>
     <header>
@@ -52,24 +51,41 @@
 
     </header>
 
-    <main class="main-thank">
-        <h2>Thank You for Joining!</h2>
+    <main class="main">
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="">
+            <div class="hero-layout">
+                <h2> Oredo Chamber of Commerce</h2>
+                <p>Empowering local Business</p>
+                <a href="join.html">Make Your Business Loud </a>
+            </div>
+        </section>
+        <h1>Home</h1>
+        <div class="main-div">
+        <section class="event-section">
+            <h2>Up Coming Events</h2>
+            <div class="slider">
 
-        <div id="results" class="results-thank"></div>
+            </div>
+            
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Condition: <span id="desc"></span></p>
 
-        <script>
-
-            const params = new URLSearchParams(window.location.search)
-
-            document.getElementById("results").innerHTML = `
-            <p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
-            <p><strong>Email:</strong> ${params.get("email")}</p>
-            <p><strong>Phone:</strong> ${params.get("phone")}</p>
-            <p><strong>Business:</strong> ${params.get("business")}</p>
-            <p><strong>Date:</strong> ${params.get("timestamp")}</p>
-            `
-
-        </script>
+            
+        </section>
+        <section class="forcast">
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
+        </section>
+        </div>
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+       
     </main>
     <footer>
         <div class="social">

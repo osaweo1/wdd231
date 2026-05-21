@@ -11,7 +11,7 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <meta property="og:title" content="Oredo chamber of Commerce| Directory page">
     <meta property="og:description" content="Explore the business directory of the Oredo Chamber of Commerce in Benin City. Discover local companies, services, and partners supporting economic growth.">
-    <meta property="og:image" content="https://osaweo1.github.io/wdd231/chamber/images/oredochambers.jpg">
+    <meta property="og:image" content="chamber/images/oredochambers.jpg">
     <meta property="og:url" content="https://www.oredochamberofcomerce.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/event.js" defer></script>
-    <script src="scripts/join.js" defer></script>
-    
-    <script src="scripts/spotlight.js" defer></script>
-    
-
-    <title>Oredo chamber of Commerce| Join</title>
+    <title>Oredo chamber of Commerce| Directory page</title>
 </head>
 <body>
     <header>
@@ -52,24 +46,37 @@
 
     </header>
 
-    <main class="main-thank">
-        <h2>Thank You for Joining!</h2>
+    <main>
+        
+        <section class="directory-header">
+            <h1>Business Directory</h1>
+            <p>Explore businesses and organizations that are members of the Oredo Chamber of Commerce in Benin City.</p>
+        </section>
+        <section>
+            <div class="filters">
+                <div class="Search-input-div">
+                    <label for="searchInput">Search Businesses:</label>
 
-        <div id="results" class="results-thank"></div>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by name, category, or address..."
+                    >
+                </div>
+                <div class="category-div">
+                    <label for="categoryFilter">Category:</label>
 
-        <script>
-
-            const params = new URLSearchParams(window.location.search)
-
-            document.getElementById("results").innerHTML = `
-            <p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
-            <p><strong>Email:</strong> ${params.get("email")}</p>
-            <p><strong>Phone:</strong> ${params.get("phone")}</p>
-            <p><strong>Business:</strong> ${params.get("business")}</p>
-            <p><strong>Date:</strong> ${params.get("timestamp")}</p>
-            `
-
-        </script>
+                    <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Services">Services</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="members" class="grid"></section>
     </main>
     <footer>
         <div class="social">
