@@ -1,0 +1,98 @@
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    #hero {
+        padding: 50px 15px;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #about h2{
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 4px;
+    }
+    .about-sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+    .about-sub img{
+        width: 400px;
+        border-radius: 5px;
+    }
+    .about-sub p{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        color: #ddd;
+    }
+    #education{
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    }
+    #education ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+     #repo-container{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+     .repo-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #contact{
+        padding: 10px;
+    }
+    form{
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+    input,
+    textarea{
+        width: 80%;
+    }
+    button{
+    width:80%;
+}
+}
