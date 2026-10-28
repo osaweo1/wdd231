@@ -92,7 +92,9 @@ main {
 main h1{
     font-size: 25px;
 }
-
+.menu-display{
+    border: 1px solid;
+}
 section {
   margin-bottom: 1rem;
   border: 1px solid #ddd;
@@ -103,6 +105,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .about-me h2{
    font-size: 15px;
    text-align: center;

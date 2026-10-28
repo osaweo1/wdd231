@@ -20,6 +20,10 @@
     .grid{
     grid-template-columns:repeat(3,1fr);
     }
+    .list {
+    display: flex;
+    flex-direction: column;
+}
 
 
    .main {

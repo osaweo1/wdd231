@@ -1,6 +1,8 @@
 const searchInput=document.querySelector("#searchInput")
 const searchCategory=document.querySelector("#categoryFilter")
 const memberSection=document.querySelector("#members")
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
 const url="data/members.json"
 
@@ -15,7 +17,20 @@ const getMembers=async()=>{
   
     displayMembers(members)
 }
+gridbutton.addEventListener("click", () => {
+    memberSection.classList.add("grid");
+    gridbutton.classList.add("active")
+    memberSection.classList.remove("list");
+    listbutton.classList.remove("active");
+});
 
+// Handle List view button click
+listbutton.addEventListener("click", () => {
+    memberSection.classList.add("list");
+    listbutton.classList.add("active");
+    memberSection.classList.remove("grid");
+    gridbutton.classList.remove("active");
+});
 const displayMembers=async(membersList)=>{
     memberSection.innerHTML=""
     membersList.forEach(member=>{
