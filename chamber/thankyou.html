@@ -23,6 +23,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/event.js" defer></script>
     <script src="scripts/join.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script>
     
     <script src="scripts/spotlight.js" defer></script>
     
@@ -55,21 +56,11 @@
     <main class="main-thank">
         <h2>Thank You for Joining!</h2>
 
-        <div id="results" class="results-thank"></div>
+        <div id="results" class="results-thank">
 
-        <script>
+        </div>
 
-            const params = new URLSearchParams(window.location.search)
-
-            document.getElementById("results").innerHTML = `
-            <p><strong>Name:</strong> ${params.get("fname")} ${params.get("lname")}</p>
-            <p><strong>Email:</strong> ${params.get("email")}</p>
-            <p><strong>Phone:</strong> ${params.get("phone")}</p>
-            <p><strong>Business:</strong> ${params.get("business")}</p>
-            <p><strong>Date:</strong> ${params.get("timestamp")}</p>
-            `
-
-        </script>
+       
     </main>
     <footer>
         <div class="social">
