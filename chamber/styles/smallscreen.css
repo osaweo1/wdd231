@@ -380,14 +380,14 @@ main h1{
     text-align: center;
 }
 
-.card {
+/* .card {
   flex: 1;
   min-width: 200px;
   background: #f5f5f5;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-}
+} */
 
 .card img {
   width: 100px;
