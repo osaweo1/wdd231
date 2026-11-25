@@ -178,12 +178,12 @@ box-shadow:0 0 5px rgba(0,0,0,0.2);
     height: 180px;
     object-fit: cover;
 }
-.card{
+/* .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 .member-info {
     padding: 15px;
 }
